@@ -1,0 +1,18 @@
+.button-buy {
+  width: 75px;
+  height: 32px;
+  background-color: var(--color-grey-7);
+  border: 1px solid var(--color-grey-7);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0px;
+  color: var(--color-grey-2);
+}
+.button-mode {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-grey-8);
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/inputs.css" />
+    <link rel="stylesheet" href="./styles/texts.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/positioning.css" />
+    <link rel="stylesheet" href="./styles/margin.css" />
+    <title>Open Music</title>
+  </head>
+  <body>
+    <header class="container flex justify-between m-top70">
+      <h1 class="title-h1">open music</h1>
+      <button id="darkMode" class="button-mode">
+        <img id="dmIcon" src="./assets/img/moon.svg" alt="" />
+      </button>
+    </header>
+    <nav class="container m-top65">
+      <h2 class="genre">Gênero Musical</h2>
+      <ul class="inputs-header m-top25 flex wrap justify-center">
+        <li>
+          <input type="radio" id="todos" name="amount" />
+          <label for="todos">Todos</label>
+        </li>
+        <li>
+          <input type="radio" id="pop" name="amount" />
+          <label for="pop">Pop</label>
+        </li>
+        <li>
+          <input type="radio" id="mpb" name="amount" />
+          <label for="mpb">MPB</label>
+        </li>
+        <li>
+          <input type="radio" id="forro" name="amount" />
+          <label for="forro">Forró</label>
+        </li>
+        <li>
+          <input type="radio" id="samba" name="amount" />
+          <label for="samba">Samba</label>
+        </li>
+        <li>
+          <input type="radio" id="baiao" name="amount" />
+          <label for="baiao">Baião</label>
+        </li>
+        <li>
+          <input type="radio" id="rap" name="amount" />
+          <label for="rap">Rap</label>
+        </li>
+        <li>
+          <input type="radio" id="hiphop" name="amount" />
+          <label for="hiphop">Hip-Hop</label>
+        </li>
+        <li>
+          <input type="radio" id="rock" name="amount" />
+          <label for="rock">Rock</label>
+        </li>
+        <li>
+          <input type="radio" id="reggae" name="amount" />
+          <label for="reggae">Reggae</label>
+        </li>
+        <li>
+          <input type="radio" id="country" name="amount" />
+          <label for="country">Country</label>
+        </li>
+        <li>
+          <input type="radio" id="gospel" name="amount" />
+          <label for="gospel">Gospel</label>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="flex column width100">
+        <div class="flex justify-between m-top60">
+          <p class="select-price">Definir Preço</p>
+          <p class="price-dom" id="rangeValue"></p>
+        </div>
+        <input class="range m-top30" type="range" name= "" value="0" min="0" max="250" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></input>
+      </div>
+      <section class="container">
+        <h2 class="m-top70 albuns">Albuns Encontrados</h2>
+        <ul class="m-top70 flex wrap justify-between">
+          <li class="container-product">
+            <div class="li-img">
+              <img src="./assets/img/1.jpg" alt="" />
+            </div>
+            <div class="li-content">
+              <div class="li-tags">
+                <small class="tags">Scalene</small>
+                <small class="tags">2017</small>
+              </div>
+              <p class="titles-cards">Magnetite</p>
+              <div class="li-buy">
+                <p class="price">R$70,00</p>
+                <button class="button-buy">Comprar</button>
+              </div>
+            </div>
+          </li>
+          <li class="container-product">
+            <div class="li-img">
+              <img src="./assets/img/1.jpg" alt="" />
+            </div>
+            <div class="li-content">
+              <div class="li-tags">
+                <small class="tags">Scalene</small>
+                <small class="tags">2017</small>
+              </div>
+              <p class="titles-cards">Magnetite</p>
+              <div class="li-buy">
+                <p class="price">R$70,00</p>
+                <button class="button-buy">Comprar</button>
+              </div>
+            </div>
+          </li>
+          <li class="container-product">
+            <div class="li-img">
+              <img src="./assets/img/1.jpg" alt="" />
+            </div>
+            <div class="li-content">
+              <div class="li-tags">
+                <small class="tags">Scalene</small>
+                <small class="tags">2017</small>
+              </div>
+              <p class="titles-cards">Magnetite</p>
+              <div class="li-buy">
+                <p class="price">R$70,00</p>
+                <button class="button-buy">Comprar</button>
+              </div>
+            </div>
+          </li>
+          <li class="container-product">
+            <div class="li-img">
+              <img src="./assets/img/1.jpg" alt="" />
+            </div>
+            <div class="li-content">
+              <div class="li-tags">
+                <small class="tags">Scalene</small>
+                <small class="tags">2017</small>
+              </div>
+              <p class="titles-cards">Magnetite</p>
+              <div class="li-buy">
+                <p class="price">R$70,00</p>
+                <button class="button-buy">Comprar</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/productsData.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.titles-cards {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-grey-0);
+}
+.price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-grey-0);
+}
+.tags {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-grey-2);
+}
+.title-h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--color-grey-1);
+}
+.genre {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-grey-1);
+}
+.select-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-grey-1);
+}
+.albuns {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-grey-1);
+}
+.price-dom {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-grey-2);
+}
