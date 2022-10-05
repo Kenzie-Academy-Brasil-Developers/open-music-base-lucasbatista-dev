@@ -1,8 +1,10 @@
-function handleDarkMode() {
-  const dmButton = document.querySelector("#darkMode");
-  const dmIcon = document.querySelector("#dmIcon");
-  const html = document.querySelector("html");
+const dmIcon = document.querySelector("#dmIcon");
+const dmButton = document.querySelector("#darkMode");
+const html = document.querySelector("html");
 
+let darkMode;
+
+function handleDarkMode() {
   dmButton.addEventListener("click", () => {
     html.classList.toggle("dark-mode");
     dmIcon.classList.toggle("text-white");

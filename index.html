@@ -22,55 +22,43 @@
     </header>
     <nav class="container m-top65">
       <h2 class="genre">Gênero Musical</h2>
-      <ul class="inputs-header m-top25 flex wrap justify-center">
-        <li>
-          <input type="radio" id="todos" name="amount" />
-          <label for="todos">Todos</label>
+      <ul class="inputs-header m-top25 flex wrap">
+        <li class="filter-music m-left30 m-top30 ">
+         <button id="btnAll" class="btn-music">Todos</button>
         </li>
-        <li>
-          <input type="radio" id="pop" name="amount" />
-          <label for="pop">Pop</label>
+        <li class="filter-music m-left30 m-top30 ">
+          <button id="btnPop" class="btn-music">Pop</button>
         </li>
-        <li>
-          <input type="radio" id="mpb" name="amount" />
-          <label for="mpb">MPB</label>
-        </li>
-        <li>
-          <input type="radio" id="forro" name="amount" />
-          <label for="forro">Forró</label>
-        </li>
-        <li>
-          <input type="radio" id="samba" name="amount" />
-          <label for="samba">Samba</label>
-        </li>
-        <li>
-          <input type="radio" id="baiao" name="amount" />
-          <label for="baiao">Baião</label>
-        </li>
-        <li>
-          <input type="radio" id="rap" name="amount" />
-          <label for="rap">Rap</label>
-        </li>
-        <li>
-          <input type="radio" id="hiphop" name="amount" />
-          <label for="hiphop">Hip-Hop</label>
-        </li>
-        <li>
-          <input type="radio" id="rock" name="amount" />
-          <label for="rock">Rock</label>
-        </li>
-        <li>
-          <input type="radio" id="reggae" name="amount" />
-          <label for="reggae">Reggae</label>
-        </li>
-        <li>
-          <input type="radio" id="country" name="amount" />
-          <label for="country">Country</label>
-        </li>
-        <li>
-          <input type="radio" id="gospel" name="amount" />
-          <label for="gospel">Gospel</label>
-        </li>
+        <li class="filter-music m-left30 m-top30 ">
+          <button id="btnMpb" class="btn-music">MPB</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnForro" class="btn-music">Forró</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnSamba" class="btn-music">Samba</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnBaiao" class="btn-music">Baião</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnRap" class="btn-music">Rap</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnHipHop" class="btn-music">Hip-Hop</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnRock" class="btn-music">Rock</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnReggae" class="btn-music">Reggae</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnCountry" class="btn-music">Country</button>
+         </li>
+         <li class="filter-music m-left30 m-top30 ">
+          <button id="btnGospel" class="btn-music">Gospel</button>
+         </li>
       </ul>
     </nav>
     <main class="container">
@@ -79,80 +67,19 @@
           <p class="select-price">Definir Preço</p>
           <p class="price-dom" id="rangeValue"></p>
         </div>
-        <input class="range m-top30" type="range" name= "" value="0" min="0" max="250" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></input>
+        <input id="btnValue" class="range m-top30" type="range" name= "" value="0" min="0" max="250" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></input>
       </div>
       <section class="container">
         <h2 class="m-top70 albuns">Albuns Encontrados</h2>
-        <ul class="m-top70 flex wrap justify-between">
-          <li class="container-product">
-            <div class="li-img">
-              <img src="./assets/img/1.jpg" alt="" />
-            </div>
-            <div class="li-content">
-              <div class="li-tags">
-                <small class="tags">Scalene</small>
-                <small class="tags">2017</small>
-              </div>
-              <p class="titles-cards">Magnetite</p>
-              <div class="li-buy">
-                <p class="price">R$70,00</p>
-                <button class="button-buy">Comprar</button>
-              </div>
-            </div>
-          </li>
-          <li class="container-product">
-            <div class="li-img">
-              <img src="./assets/img/1.jpg" alt="" />
-            </div>
-            <div class="li-content">
-              <div class="li-tags">
-                <small class="tags">Scalene</small>
-                <small class="tags">2017</small>
-              </div>
-              <p class="titles-cards">Magnetite</p>
-              <div class="li-buy">
-                <p class="price">R$70,00</p>
-                <button class="button-buy">Comprar</button>
-              </div>
-            </div>
-          </li>
-          <li class="container-product">
-            <div class="li-img">
-              <img src="./assets/img/1.jpg" alt="" />
-            </div>
-            <div class="li-content">
-              <div class="li-tags">
-                <small class="tags">Scalene</small>
-                <small class="tags">2017</small>
-              </div>
-              <p class="titles-cards">Magnetite</p>
-              <div class="li-buy">
-                <p class="price">R$70,00</p>
-                <button class="button-buy">Comprar</button>
-              </div>
-            </div>
-          </li>
-          <li class="container-product">
-            <div class="li-img">
-              <img src="./assets/img/1.jpg" alt="" />
-            </div>
-            <div class="li-content">
-              <div class="li-tags">
-                <small class="tags">Scalene</small>
-                <small class="tags">2017</small>
-              </div>
-              <p class="titles-cards">Magnetite</p>
-              <div class="li-buy">
-                <p class="price">R$70,00</p>
-                <button class="button-buy">Comprar</button>
-              </div>
-            </div>
-          </li>
+        <ul id="mainList" class="m-top70 flex wrap justify-between">
+          
         </ul>
       </section>
     </main>
     <script src="./scripts/theme.js"></script>
     <script src="./scripts/productsData.js"></script>
+    <script src="./scripts/filters.js"></script>
     <script src="./index.js"></script>
+    <script src="./scripts/rendering.js"></script>
   </body>
 </html>
